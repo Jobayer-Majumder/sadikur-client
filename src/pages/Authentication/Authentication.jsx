@@ -2,11 +2,11 @@ import React, { useContext } from 'react';
 import { useAlert } from 'react-alert';
 import { gql, useMutation } from '@apollo/client';
 import useForm from '../../hooks/useForm';
-import SpinLoader from '../../components/common/SpinLoader';
+// import SpinLoader from '../../components/common/SpinLoader';
 import { UserContext } from '../../App';
-import useAuth from '../../hooks/useAuth';
 import { useHistory } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
+import { decodeToken } from '../../utils/decodeToken';
 
 
 
@@ -22,7 +22,6 @@ const LOGIN_MUTATION = gql`
 
 const Authentication = () => {
     const alert = useAlert();
-    const { getToken } = useAuth();
     const [isUserLoggedIn, setIsUserLoggedIn] = useContext(UserContext);
     const { loginData, handleForm, setLoginData } = useForm();
 
@@ -36,13 +35,15 @@ const Authentication = () => {
 
     React.useEffect(() => {
         if (data) {
-            sessionStorage.setItem('token', data.findUser.token)
+            sessionStorage.setItem('token', data.findUser.token);
+            decodeToken().then(user => setIsUserLoggedIn(user)).catch(err => {
+                alert.error(err);
+            });
             alert.success('Login Successful!')
 
         }
-    }, [alert, data])
+    }, [alert, data, setIsUserLoggedIn])
 
-    console.log(isUserLoggedIn, 'from context');
 
     const handleLogin = async e => {
         e.preventDefault();
@@ -54,8 +55,6 @@ const Authentication = () => {
                     password: loginData?.password,
                 }
             });
-            const user = await getToken();
-            setIsUserLoggedIn(user)
             setLoginData({ email: '', password: '' })
             history.replace(from);
 
@@ -92,9 +91,9 @@ const Authentication = () => {
                         </div>
                         <div className="py-2 relative">
                             <button type="submit" className="relative focus:outline-none focus:ring-2 bg-brand text-white font-bold tracking-wider block w-full p-2 rounded-lg">
-                                {
+                                {/* {
                                     loading ? <SpinLoader /> : null
-                                }
+                                } */}
                                 {/* <SpinLoader /> */}
                                 Sign In
                             </button>

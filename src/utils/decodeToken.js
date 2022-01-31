@@ -1,8 +1,12 @@
 import jwt_decode from 'jwt-decode';
 
-export const decodeToken = (token) => {
+export const decodeToken = async token => {
 
-    const decoded = jwt_decode(token);
+    try {
+        const decoded = await jwt_decode(token);
 
-    return decoded;
+        return decoded;
+    } catch (error) {
+        return error
+    }
 };

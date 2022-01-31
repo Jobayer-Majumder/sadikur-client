@@ -5,12 +5,11 @@ import { UserContext } from '../../App';
 const PrivateRoute = ({ children, ...rest }) => {
     const [isUserLoggedIn] = useContext(UserContext);
 
-    console.log(isUserLoggedIn?.isAuthorized)
     return (
         <Route
             {...rest}
             render={({ location }) =>
-                isUserLoggedIn?.isAuthorized ? (
+                isUserLoggedIn?.email ? (
                     children
                 ) : (
                     <Redirect
