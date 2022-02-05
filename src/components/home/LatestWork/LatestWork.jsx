@@ -13,11 +13,9 @@ const LatestWork = () => {
 
                     {
                         latestWorkData.slice(0, 3).map((d, index) =>
-                            <>
-                                <div className="">
-                                    <img className='w-full h-72 object-cover rounded border-b-4 cursor-pointer border-transparent hover:border-primary duration-500' src={d} key={index} alt='latest work sample' />
-                                </div>
-                            </>
+                            <div className="" key={index}>
+                                <img className='w-full h-72 object-cover rounded border-b-4 cursor-pointer border-transparent hover:border-primary duration-500' src={d} key={index} alt='latest work sample' />
+                            </div>
                         )
                     }
 
@@ -29,11 +27,9 @@ const LatestWork = () => {
 
                     {
                         latestWorkData.slice(3, 6).map((d, index) =>
-                            <>
-                                <div className="">
-                                    <img className='w-full h-72 object-cover rounded border-b-4 cursor-pointer border-transparent hover:border-primary duration-500' src={d} key={index} alt='latest work sample' />
-                                </div>
-                            </>
+                            <div className="" key={index}>
+                                <img className='w-full h-72 object-cover rounded border-b-4 cursor-pointer border-transparent hover:border-primary duration-500' src={d} key={index} alt='latest work sample' />
+                            </div>
                         )
                     }
                 </div>

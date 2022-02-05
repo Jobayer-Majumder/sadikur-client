@@ -17,8 +17,8 @@ const ReachingGoal = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 rounded-lg py-8">
                         {
                             reachingGoalData.map((goal, index) =>
-                                <>
-                                    <div className={`${goal.bg} py-6 group hover:bg-primary rounded-lg shadow-lg duration-500`} key={index}>
+                                <section key={index}>
+                                    <div className={`${goal.bg} py-6 group hover:bg-primary rounded-lg shadow-lg duration-500`}>
                                         <div className='py-4 flex justify-center items-center'>
                                             <h1 className='inline text-4xl md:text-5xl group-hover:text-white group-hover:border-white text-brand border-2 border-primary rounded-full p-5'>
                                                 {goal.icon}
@@ -43,7 +43,7 @@ const ReachingGoal = () => {
                                             }
                                         </div>
                                     </div>
-                                </>
+                                </section>
                             )
                         }
                     </div>

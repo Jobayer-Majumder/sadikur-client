@@ -13,6 +13,7 @@ import MakeAdmin from '../../components/AdminPage/MakeAdmin/MakeAdmin';
 import PortfolioList from '../../components/AdminPage/PortfolioList/PortfolioList';
 import { menuItems } from '../../components/AdminPage/Sidebar/sidebarData';
 import AddDesign from '../../components/AdminPage/AddDesign/AddDesign';
+import UserList from '../../components/AdminPage/UserList/UserList';
 
 
 
@@ -70,14 +71,17 @@ const AdminPage = () => {
                             <AdminNavbar menuHandler={menuHandler} />
                             <div className="bg-white h-screen py-4 px-2 lg:px-4 rounded-lg">
                                 <Switch>
-                                    <Route path="/admin/designList">
+                                    <Route path="/admin/design_list">
                                         <PortfolioList />
                                     </Route>
-                                    <Route path="/admin/makeAdmin">
+                                    <Route path="/admin/make_admin">
                                         <MakeAdmin />
                                     </Route>
-                                    <Route path="/admin/addDesign">
+                                    <Route path="/admin/add_design">
                                         <AddDesign />
+                                    </Route>
+                                    <Route path="/admin/user_list">
+                                        <UserList />
                                     </Route>
                                 </Switch>
                             </div>

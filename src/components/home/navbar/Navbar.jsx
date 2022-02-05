@@ -17,12 +17,14 @@ const Navbar = () => {
                         </Link>
                     </div>
                     <div className="col-span-2 md:col-span-4 lg:col-span-5">
-                        <div className="flex justify-end gap-8">
+                        <div className="flex justify-end gap-8 items-center">
                             <Link to="/about" className='text-xl'>About</Link>
                             <Link to="/services" className='text-xl'>Services</Link>
                             <Link to="/portfolio" className='text-xl'>Portfolio</Link>
                             <Link to="/blogs" className='text-xl'>Blogs</Link>
                             <Link to="/contact" className='text-xl'>Contact</Link>
+                            
+                        <Link to="/login" className='px-4 py-2 border rounded-md hover:text-white hover:bg-brand'>Login</Link>
                         </div>
                     </div>
                 </div>

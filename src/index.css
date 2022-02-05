@@ -34,6 +34,10 @@
   @apply px-6 py-4 mt-4 font-bold hover:shadow-brand hover:-translate-y-2 duration-300 transform text-white bg-primary rounded-full
 }
 
+.form-input{
+	@apply bg-gray-200 border border-gray-100 focus:outline-none block w-full py-2 px-4 rounded-lg focus:border-brand focus:bg-white
+}
+
   /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-scroll::-webkit-scrollbar {
   display: none;

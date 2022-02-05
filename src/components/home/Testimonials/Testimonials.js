@@ -1,24 +1,19 @@
 import React from 'react';
-import { useQuery, gql } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 import SingleTestimonial from './SingleTestimonial';
+import { GET_REVIEWS } from '../../../graphql/queries/queries';
+import { useAlert } from 'react-alert';
 
-const GET_REVIEWS = gql`
-  query {
-    reviews{
-        _id
-        name
-        img
-        company
-        comment
-        review
-    }
-  }
-`;
+
+
 
 const Testimonials = () => {
-    const { loading, data } = useQuery(GET_REVIEWS);
+    const alert = useAlert()
+    const { loading, data, error } = useQuery(GET_REVIEWS);
 
-    console.log(data?.reviews)
+    if (error) {
+        alert.error(error.message)
+    };
 
     return (
         <section>

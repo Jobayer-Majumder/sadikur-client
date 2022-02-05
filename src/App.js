@@ -9,6 +9,8 @@ import Footer from './components/home/Footer/Footer';
 import Authentication from "./pages/Authentication/Authentication";
 import { decodeToken } from "./utils/decodeToken";
 
+
+
 const PrivateRoute = lazy(() => import("./components/privateRoute/PrivateRoute"));
 const AdminPage = lazy(() => import('./pages/admin/AdminPage'));
 const BlogPage = lazy(() => import('./pages/blogPage/BlogPage'));
@@ -27,13 +29,15 @@ function App() {
 
   React.useEffect(() => {
     const token = sessionStorage.getItem('token');
-    decodeToken(token).then(success => {
-      setIsUserLoggedIn(success)
-    }).catch(err => alert(err))
-
+    if(token){
+      decodeToken(token).then(success => {
+        setIsUserLoggedIn(success)
+      }).catch(err => alert(err))
+    }
     
   },[]);
   
+  console.log(isUserLoggedIn, 'from app.js')
 
 
   return (

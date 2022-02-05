@@ -1,27 +1,21 @@
+import { useQuery } from '@apollo/client';
 import React from 'react';
-import { useQuery, gql } from '@apollo/client';
+import { GET_WORKS } from '../../../graphql/queries/queries';
 
 
-
-const GET_WORKS = gql`
-  query {
-    works{
-      title,
-      category,
-      file,
-      publishDate
-    }
-  }
-`;
 
 const PortfolioList = () => {
-    const { loading, data } = useQuery(GET_WORKS);
+    const { loading, data, error } = useQuery(GET_WORKS);
 
-    console.log(data)
+   
 
-    if(loading){
+    if (loading) {
         return <h1 className='text-center'>Loading</h1>
     }
+
+    if(error){
+        alert.error(error.message)
+    };
 
     return (
         <section>
@@ -50,7 +44,7 @@ const PortfolioList = () => {
                                     data?.works.map((work, index) =>
                                         <tr className="text-gray-700" key={index}>
                                             <td className="px-2 py-3">
-                                                {index+1}
+                                                {index + 1}
                                             </td>
                                             <td className="px-2 py-3 text-md font-semibold">{work.title}</td>
                                             <td className="px-2 py-3 text-xs">
@@ -68,7 +62,7 @@ const PortfolioList = () => {
                                                     </button>
                                                 </div>
                                             </td>
-                                            <td className="px-2 py-3 text-sm">{new Date().toDateString()}</td>
+                                            <td className="px-2 py-3 text-sm">{new Date(work.createdAt).toDateString()}</td>
                                         </tr>
                                     )
                                 }
