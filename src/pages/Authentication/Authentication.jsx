@@ -76,7 +76,7 @@ const Authentication = () => {
                 <div className="rounded-lg bg-white shadow px-4 lg:px-24 py-16 lg:max-w-xl sm:max-w-md w-full text-center">
                     <form className="text-center" onSubmit={e => handleLogin(e)}>
                         <div className="flex flex-col justify-center items-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Oikya_Front_Logo.png/480px-Oikya_Front_Logo.png" alt="" className="h-32" />
+                            <img src="https://cdn.truelancer.com/upload-full/711224-gps-design-logo---Copy-01.png" alt="" className="h-32" />
                             <h1 className="font-bold tracking-wider text-3xl mb-8 w-full text-brand">
                                 Sign in
                             </h1>
