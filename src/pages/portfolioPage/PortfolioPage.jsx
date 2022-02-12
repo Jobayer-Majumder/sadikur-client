@@ -5,7 +5,7 @@ import Portfolio from '../../components/portfolio/Portfolio';
 
 const PortfolioPage = () => {
     return (
-        <section>
+        <section className='pt-20'>
             <SmallBanner content='Portfolio'/>
             <Portfolio />
         </section>

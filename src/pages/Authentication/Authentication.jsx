@@ -71,7 +71,7 @@ const Authentication = () => {
 
 
     return (
-        <section className="min-h-screen flex flex-col bg-gray-100">
+        <section className="min-h-screen flex flex-col bg-gray-100 pt-20">
             <div className="flex flex-1 items-center justify-center py-12">
                 <div className="rounded-lg bg-white shadow px-4 lg:px-24 py-16 lg:max-w-xl sm:max-w-md w-full text-center">
                     <form className="text-center" onSubmit={e => handleLogin(e)}>

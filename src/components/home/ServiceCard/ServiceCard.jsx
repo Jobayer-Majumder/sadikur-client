@@ -13,7 +13,7 @@ const ServiceCard = () => {
                 <p className="text-center text-sm md:text-base lg:text-xl text-gray-800">
                     We go well beyond the logo. We build purposeful brands for a better tomorrow.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-10 md:pt-20">
                     {
                         serviceCardData.map((service, index) => <SingleCard service={service} key={index++} />)
                     }

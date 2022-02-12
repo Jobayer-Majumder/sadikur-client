@@ -10,7 +10,7 @@ const SingleTestimonial = ({ review: {name, company, comment, review, img} }) =>
     return (
         <div className='rounded-md shadow relative'>
             <div className="px-4 py-4 bg-gray-100">
-                <p className="text-xl text-justify pb-3">{comment}</p>
+                <p className="text-sm md:text-md lg:text-xl text-justify pb-3">{comment}</p>
             </div>
             <div className="flex px-4 py-2 gap-5 justify-center md:justify-start items-center">
                 <img className='h-16 w-16 rounded-full object-cover' src='https://cdn.lifehack.org/wp-content/uploads/2014/05/HughJackman.jpg' alt="user review profile" />

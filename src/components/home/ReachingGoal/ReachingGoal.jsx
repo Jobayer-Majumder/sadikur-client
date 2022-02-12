@@ -9,7 +9,7 @@ const ReachingGoal = () => {
                     <h1 className="text-center text-xl md:text-3xl lg:text-5xl font-bold text-gray-800">
                         Reach your goals with our guided process
                     </h1>
-                    <hr className='border-primary border-2 w-1/6 rounded-tr-full rounded-bl-full my-8 mx-auto' />
+                    <hr className='border-primary border-2 w-1/6 rounded-tr-full rounded-bl-full my-5 md:my-8 mx-auto' />
                     <p className="text-center text-sm md:text-base lg:text-xl text-gray-800">
                         We know how overwhelming building a brand can be and that’s why we’re here to guide
                         <br /> you every step of the way! Take the guess work out of growing your brand.
@@ -25,7 +25,7 @@ const ReachingGoal = () => {
                                             </h1>
                                         </div>
                                         <div className="px-3">
-                                            <h1 className="text-xl md:text-3xl py-5 font-bold group-hover:text-white text-gray-800">
+                                            <h1 className="text-xl md:text-3xl py-3 md:py-5 font-bold group-hover:text-white text-gray-800">
                                                 <span className="text-brand group-hover:text-white text-xl md:text-4xl font-bold">{index + 1}.</span> {''}
                                                 {
                                                     goal.title

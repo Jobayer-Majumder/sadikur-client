@@ -16,7 +16,7 @@ import Testimonials from '../../components/home/Testimonials/Testimonials';
 const Home = () => {
     return (
         <section>
-            <header className="">
+            <header className="pt-20">
                 <Banner />
             </header>
 

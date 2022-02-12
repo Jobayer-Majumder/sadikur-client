@@ -4,7 +4,7 @@ import Services from '../../components/services/Services';
 
 const ServicePage = () => {
     return (
-        <section>
+        <section className='pt-20'>
             <Services />
             <SellingSlogan buttonContent='Contact'/>
         </section>

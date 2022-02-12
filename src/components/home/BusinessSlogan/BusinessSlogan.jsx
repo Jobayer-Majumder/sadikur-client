@@ -8,8 +8,8 @@ const BusinessSlogan = () => {
     return (
         <section>
             <div className="max-w-7xl px-4 sm:px-6 mx-auto py-12">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="">
+                <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-4">
+                    <div className="text-center md:text-left">
                         <h2 className="text-xl md:text-3xl lg:text-5xl font-bold text-gray-800">
                             Stop slowing down the growth of your business
                         </h2>
@@ -20,7 +20,7 @@ const BusinessSlogan = () => {
                         {
                             businessSloganData?.map((list, index) =>
                                 <ul key={index}>
-                                    <li className='font-semibold text-gray-800 text-lg md:text-xl font-semibold-2 py-1'>
+                                    <li className='text-left flex gap-2 justify-start items-center font-semibold text-gray-800 text-md md:text-xl font-semibold-2 py-1'>
                                         <MdDone className='text-white inline p-1 text-2xl bg-primary rounded-full'>✓</MdDone> {''}
                                         {list}
                                     </li>

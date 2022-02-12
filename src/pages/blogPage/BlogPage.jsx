@@ -3,7 +3,7 @@ import React from 'react';
 
 const BlogPage = () => {
     return (
-        <section>
+        <section className='pt-20'>
             <div className="h-screen flex flex-col justify-center items-center">
                 <h2 className="text-indigo-500 text-3xl">
                     Blogs page under development !

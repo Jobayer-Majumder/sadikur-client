@@ -6,12 +6,12 @@ const Banner = () => {
     return (
         <section className='bg-gray-100'>
             <div className="max-w-6xl px-4 sm:px-6 m-auto py-6">
-                <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="flex flex-col-reverse md:grid md:grid-cols-2">
                     <div className="">
-                        <h2 className="text-xl md:text-3xl lg:text-5xl pb-2 pt-12 text-gray-800 font-bold">
+                        <h2 className="text-3xl lg:text-5xl pb-2 pt-12 text-gray-800 font-bold">
                             Unlock Your Brand's
                         </h2>
-                        <h2 className="text-xl md:text-3xl lg:text-5xl pb-12 text-gray-800 font-bold">
+                        <h2 className="text-3xl lg:text-5xl pb-8 md:pb-12 text-gray-800 font-bold">
                             True Potential
                         </h2>
                         <div className="pb-4">

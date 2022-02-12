@@ -9,14 +9,14 @@ const SingleCard = ({ service }) => {
         <>
             <div className="py-6 px-6 rounded-2xl bg-gray-100 shadow-lg">
                 <div className='py-4 flex gap-5 justify-center md:justify-start items-center'>
-                    <h1  className='inline text-4xl md:text-5xl text-brand border-2 border-primary rounded-full p-5'>
+                    <h1 className='inline text-4xl md:text-5xl text-brand border-2 border-primary rounded-full p-5'>
                         {service.icon}
                     </h1>
                 </div>
-                <h1 className="text-xl md:text-3xl lg:text-5xl pb-2 text-gray-800 font-bold">
+                <h1 className="text-xl md:text-3xl lg:text-5xl md:pb-2 text-gray-800 font-bold">
                     {service.title}
                 </h1>
-                <p className='py-5 text-lg md:text-xl text-gray-600'>
+                <p className='py-3 md:py-5 text-lg md:text-xl text-gray-600'>
                     {service.desc}
                 </p>
                 {

@@ -5,10 +5,10 @@ const Counter = () => {
     return (
         <section>
             <div className="max-w-6xl px-4 sm:px-6 m-auto py-8">
-                <div className="grid grid-cols-2 md:grid-cols-4">
+                <div className="grid grid-cols-1 md:grid-cols-4">
                     {
                         counterData.map((d, index) =>
-                            <section key={index} className=''>
+                            <section key={index} className='py-5'>
                                 <div className="flex items-center justify-center pb-3 cursor-pointer">
                                     {/* <Fade big> */}
                                     <div className="group hover:bg-primary shadow-md transition duration-500 h-36 w-36 border-8 border-gray-200 hover:border-primary flex justify-center items-center rounded-full">

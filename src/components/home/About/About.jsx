@@ -24,7 +24,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className="">
-                        <h1 className="text-xl md:text-3xl lg:text-5xl font-bold text-gray-800 py-8">
+                        <h1 className="text-xl md:text-3xl lg:text-5xl font-bold text-gray-800 py-5 md:py-8">
                             Who We Work With
                         </h1>
                         {

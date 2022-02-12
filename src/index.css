@@ -31,7 +31,7 @@
 /* custom button */
 
 .button-brand{
-  @apply px-6 py-4 mt-4 font-bold hover:shadow-brand hover:-translate-y-2 duration-300 transform text-white bg-primary rounded-full
+  @apply px-6 py-4 z-10 mt-4 font-bold hover:shadow-brand hover:-translate-y-2 duration-300 transform text-white bg-primary rounded-full
 }
 
 .form-input{

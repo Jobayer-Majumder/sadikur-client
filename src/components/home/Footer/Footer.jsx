@@ -13,9 +13,9 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-7 gap-5">
                     <div className="py-4 px-2 md:col-span-2">
                         <img src="https://justcreative.com/wp-content/uploads/2020/02/Jacob-Cass-Sidebar-Profile-Suit-min.png" alt="" />
-                        <h3 className="text-brand font-semibold">
+                        {/* <h3 className="text-brand font-semibold">
                             Sadikur Rahman - Creative Graphic Designer <br /> Based on Bangladesh
-                        </h3>
+                        </h3> */}
                         <div className="pt-5">
                             <p className='text-sm md:text-base font-semibold text-gray-500'>
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, repellat!
@@ -55,7 +55,7 @@ const Footer = () => {
                             <p className="text-center pb-3 text-sm md:text-base lg:text-xl text-gray-300 font-semibold">
                                 Follow Me On
                             </p>
-                            <div className="flex justify-between">
+                            <div className="flex justify-between flex-wrap gap-2">
                                 {
                                     followLink.map((l, index) => <a href='/' key={index}>
                                         <button className={`p-2 text-xl border border-gray-600 hover:bg-gray-100 duration-500 rounded-full`} style={{ color: `${l.color}` }}>
@@ -89,13 +89,13 @@ const Footer = () => {
                 </div>
                 <hr className='border-gray-800' />
                 <div className="flex flex-col md:flex-row text-gray-600 justify-between items-center">
-                    <div className="">
-                        <h3 className="text-lg">
+                    <div className="text-center">
+                        <h3 className="text-md">
                             <span className="">© </span>{new Date().getFullYear()} Sadikur Rahman <small>(Parchment Design Co.)</small>
                         </h3>
                     </div>
                     <div className='text-center'>
-                        <h3 className="text-lg">Powered By {''}
+                        <h3 className="text-md">Powered By {''}
                             <a href="https://jobayermajumder.netlify.app/" className='underline text-blue-400' target='_blank' rel='noreferrer'>Jobayer Majumder</a> {''}
                             <small>(MERN Stack Developer)</small>
                         </h3>

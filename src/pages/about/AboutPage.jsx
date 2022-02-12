@@ -4,7 +4,7 @@ import AboutMe from '../../components/AboutPage/AboutMe/AboutMe';
 
 const AboutPage = () => {
     return (
-        <section>
+        <section className='pt-20'>
             <AboutMe />
         </section>
     );
