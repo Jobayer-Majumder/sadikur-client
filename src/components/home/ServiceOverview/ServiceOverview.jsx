@@ -38,9 +38,11 @@ const ServiceOverview = () => {
                                 </ul>
                             )
                         }
-                        <button className='px-6 py-3 mt-4 font-bold hover:shadow-brand hover:-translate-y-2 duration-300 transform text-white bg-primary rounded-full'>
-                            <Link to='/services'>View Services</Link>
-                        </button>
+                        <Link to='/services'>
+                            <button className='px-6 py-3 mt-4 font-bold hover:shadow-brand hover:-translate-y-2 duration-300 transform text-white bg-primary rounded-full'>
+                                View Services
+                            </button>
+                        </Link>
                     </div>
                     <div className="py-6 px-6 rounded-2xl bg-white">
                         <div className='py-4 flex gap-5 justify-center md:justify-start items-center'>

@@ -19,9 +19,11 @@ const BrandAdvertise = () => {
                             </p>
 
                             <div className="pb-3">
-                                <button className='px-6 py-4 mt-4 font-bold hover:shadow-brand hover:-translate-y-2 duration-300 transform text-white bg-primary rounded-full'>
-                                    <Link to='/portfolio'>View Portfolio</Link>
-                                </button>
+                                <Link to='/portfolio'>
+                                    <button className='px-6 py-4 mt-4 font-bold hover:shadow-brand hover:-translate-y-2 duration-300 transform text-white bg-primary rounded-full'>
+                                        View Portfolio
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

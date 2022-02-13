@@ -18,8 +18,8 @@ const About = () => {
             <div className="max-w-7xl px-4 sm:px-6 m-auto py-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="">
-                        <img className='' src="https://scontent.fdac22-1.fna.fbcdn.net/v/t1.6435-9/97626451_2422242901399310_7848494460705964032_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeFyw1PQqRft96FmC9Noa5Fr649LVgMLUrLrj0tWAwtSsmYqxrrN1PffM8uAu5-1BKayBsgoJ0FG1HiNGxH317D1&_nc_ohc=jpIluWhZeGsAX_JzCAs&_nc_ht=scontent.fdac22-1.fna&oh=bd5256b6b8c0d6a60f42556f24c8edec&oe=6191D0B4" alt="sadikur's rahman creative logo designer profile" />
-                        <p className="text-center text-sm md:text-base lg:text-xl font-semibold text-gray-400 py-5">
+                        <img className='rounded-md' src="https://images.pexels.com/photos/4195342/pexels-photo-4195342.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="sadikur's rahman creative logo designer profile" />
+                        <p className="text-center md:text-left text-sm md:text-base lg:text-xl font-semibold text-gray-400 py-5">
                             <span className="text-brand font-bold">Sadikur Rahman</span> – Brand Designer, Strategist & Founder of JUST Creative: An award-winning branding & design agency specializing in brand strategy, brand design & rebranding.
                         </p>
                     </div>

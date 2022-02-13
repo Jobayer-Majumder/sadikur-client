@@ -5,12 +5,12 @@ const AboutMe = () => {
     return (
         <section className=''>
             <div className="max-w-7xl px-4 sm:px-6 m-auto py-12">
-                <div className="grid grid-cols-1 md:grid-cols-3 pt-5 pb-12">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-5 pb-12">
                     <div className="">
-                        <img className='' src="https://scontent.fdac22-1.fna.fbcdn.net/v/t1.6435-9/97626451_2422242901399310_7848494460705964032_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeFyw1PQqRft96FmC9Noa5Fr649LVgMLUrLrj0tWAwtSsmYqxrrN1PffM8uAu5-1BKayBsgoJ0FG1HiNGxH317D1&_nc_ohc=jpIluWhZeGsAX_JzCAs&_nc_ht=scontent.fdac22-1.fna&oh=bd5256b6b8c0d6a60f42556f24c8edec&oe=6191D0B4" alt="sadikur's rahman creative logo designer profile" />
+                        <img className='rounded-md' src="https://images.pexels.com/photos/4195342/pexels-photo-4195342.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="sadikur's rahman creative logo designer profile" />
                     </div>
-                    <div className="md:col-span-2">
-                        <h2 className="text-xl md:text-lg lg:text-3xl font-semibold text-gray-800">
+                    <div className="text-center md:text-left md:col-span-2">
+                        <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800">
                             I’m Sadik molla and I started JUST Creative to help businesses grow & make a lasting impact on the world.
                         </h2>
                         <p className="py-2.5 text-sm md:text-base lg:text-xl text-gray-600">

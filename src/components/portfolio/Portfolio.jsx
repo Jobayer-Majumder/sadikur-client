@@ -7,6 +7,8 @@ const GET_WORKS = gql`
   query {
     works{
       title
+      description
+      category
     }
   }
 `;
@@ -20,13 +22,14 @@ const Portfolio = () => {
         setTab(e.target.value)
     }
 
+    console.log(data)
 
 
     return (
         <section>
             <Navigation tab={tab} handleNavigation={handleNavigation} />
 
-            <div className="max-w-7xl px-4 sm:px-6 m-auto pt-8 pb-40">
+            <div className="max-w-7xl px-4 sm:px-6 m-auto pt-4 md:pt-8 pb-40">
                 {
                     loading && <h3 className='text-center text-3xl text-brand'>loading...</h3>
                 }

@@ -14,6 +14,7 @@ import Subscribe from '../../components/home/Subscribe/Subscribe';
 import Testimonials from '../../components/home/Testimonials/Testimonials';
 
 const Home = () => {
+
     return (
         <section>
             <header className="pt-20">

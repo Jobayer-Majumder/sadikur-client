@@ -22,10 +22,13 @@ const SingleWork = ({ work }) => {
     return (
         <>
             <div>
-                <img src={randomImage[a]} className='w-full h-72 rounded border-b-4 cursor-pointer border-transparent hover:border-primary duration-500' alt="logo" />
-                <h3 className="">
+                <img src={randomImage[a]} className='w-full h-72 rounded-md border-b-4 cursor-pointer border-transparent hover:border-primary duration-500' alt="logo" />
+                <h3 className="font-semibold text-gray-800 py-2">
                     {work.title}
                 </h3>
+                <p className="text-sm text-gray-800">
+                    {work.description}
+                </p>
             </div>
         </>
     );

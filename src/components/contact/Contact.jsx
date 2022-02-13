@@ -23,24 +23,24 @@ const Contact = () => {
                             Use the form below or email sadikur rahman at info@sadik.com.
                         </p>
                         <form action="" className="">
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <div className="py-3">
-                                    <input type="text" className="w-full py-3 px-3 ring-2 ring-gray-300 focus:ring-brand outline-none rounded duration-500" placeholder='First Name' />
+                                    <input type="text" className="w-full py-3 px-3 ring-1 ring-gray-300 focus:ring-brand outline-none rounded duration-500" placeholder='Your Name' />
                                 </div>
                                 <div className="py-3">
-                                    <input type="email" className="w-full py-3 px-3 ring-2 ring-gray-300 focus:ring-brand outline-none rounded duration-500" placeholder='Email' />
+                                    <input type="email" className="w-full py-3 px-3 ring-1 ring-gray-300 focus:ring-brand outline-none rounded duration-500" placeholder='Email' />
                                 </div>
                             </div>
                             <div className="py-3">
-                                <select name="" id="" className="w-full py-3 px-3 ring-2 ring-gray-300 focus:ring-brand outline-none rounded duration-500">
-                                    <option value="hello">Pick One</option>
+                                <select name="" id="" className="w-full py-3 px-3 ring-1 ring-gray-300 focus:ring-brand outline-none rounded duration-500">
+                                    <option selected disabled>Pick One</option>
                                     <option value="hello">Argent Call</option>
                                     <option value="hello">Arrange a meeting</option>
                                     <option value="hello">For Design inquiry</option>
                                 </select>
                             </div>
                             <div className="py-3">
-                                <textarea name="" id="" cols="30" rows="4" className="w-full py-3 px-3 ring-2 ring-gray-300 focus:ring-brand outline-none rounded duration-500" placeholder='Type Your Message..' />
+                                <textarea name="" id="" cols="30" rows="4" className="w-full py-3 px-3 ring-1 ring-gray-300 focus:ring-brand outline-none rounded duration-500" placeholder='Type Your Message..' />
                             </div>
                             <button className='button-brand'>Send Message</button>
                         </form>

@@ -13,9 +13,6 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-7 gap-5">
                     <div className="py-4 px-2 md:col-span-2">
                         <img src="https://justcreative.com/wp-content/uploads/2020/02/Jacob-Cass-Sidebar-Profile-Suit-min.png" alt="" />
-                        {/* <h3 className="text-brand font-semibold">
-                            Sadikur Rahman - Creative Graphic Designer <br /> Based on Bangladesh
-                        </h3> */}
                         <div className="pt-5">
                             <p className='text-sm md:text-base font-semibold text-gray-500'>
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, repellat!
@@ -95,11 +92,12 @@ const Footer = () => {
                         </h3>
                     </div>
                     <div className='text-center'>
-                        <h3 className="text-md">Powered By {''}
+                        <h3 className="text-md ">Made
+                            <span className="text-red-600 px-2 text-xl">
+                                &hearts;
+                            </span>
                             <a href="https://jobayermajumder.netlify.app/" className='underline text-blue-400' target='_blank' rel='noreferrer'>Jobayer Majumder</a> {''}
-                            <small>(MERN Stack Developer)</small>
                         </h3>
-                        
                     </div>
                 </div>
             </div>

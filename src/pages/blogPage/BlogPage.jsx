@@ -4,7 +4,7 @@ import React from 'react';
 const BlogPage = () => {
     return (
         <section className='pt-20'>
-            <div className="h-screen flex flex-col justify-center items-center">
+            <div className="h-screen text-center flex flex-col justify-center items-center">
                 <h2 className="text-indigo-500 text-3xl">
                     Blogs page under development !
                 </h2>
