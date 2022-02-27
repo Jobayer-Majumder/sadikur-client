@@ -16,7 +16,7 @@ const randomImage = [
 
 
 const SingleWork = ({ work }) => {
-
+console.log(work)
     const a = Math.floor(Math.random() * randomImage.length);
 
     return (

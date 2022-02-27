@@ -1,28 +1,20 @@
-import { useQuery, gql } from '@apollo/client';
+import { useQuery } from '@apollo/client';
 import React from 'react';
+import { GET_WORKS_BY_CATEGORY } from '../../graphql/queries/queries';
 import Navigation from './Navigation';
 import SingleWork from './SingleWork';
 
-const GET_WORKS = gql`
-  query {
-    works{
-      title
-      description
-      category
-    }
-  }
-`;
 
 
 const Portfolio = () => {
     const [tab, setTab] = React.useState('all');
-    const { loading, data } = useQuery(GET_WORKS);
+    const { loading, data } = useQuery(GET_WORKS_BY_CATEGORY, {
+        variables: { bred: tab }
+    });
 
     const handleNavigation = e => {
         setTab(e.target.value)
     }
-
-    console.log(data)
 
 
     return (
@@ -33,9 +25,13 @@ const Portfolio = () => {
                 {
                     loading && <h3 className='text-center text-3xl text-brand'>loading...</h3>
                 }
+                {
+                    data?.worksByCategory.length <= 0 ?
+                        <p className='text-base md:text-xl text-brand font-semibold text-center'>No items in {tab} category!</p> : null
+                }
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {
-                        data?.works.map((work, index) => <SingleWork work={work} key={index} />)
+                        data?.worksByCategory.map((work, index) => <SingleWork work={work} key={index} />)
                     }
                 </div>
             </div>

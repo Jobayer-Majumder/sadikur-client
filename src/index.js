@@ -7,6 +7,7 @@ import {
   InMemoryCache,
   ApolloProvider
 } from "@apollo/client";
+// import { createUploadLink } from "apollo-upload-client";
 import {
   transitions,
   positions,
@@ -18,8 +19,11 @@ import AlertTemplate from 'react-alert-template-basic';
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  uri: 'http://localhost:5000/graphql/',
-  // credentials: 'include'
+  // link: createUploadLink({
+  //   uri: "http://localhost:5000/"
+  // }),
+  
+  uri: "http://localhost:5000/graphql"
 })
 
 const options = {

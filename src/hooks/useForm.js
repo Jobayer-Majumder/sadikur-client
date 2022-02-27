@@ -12,9 +12,11 @@ const useForm = () => {
 
         const newData = { ...formData }
 
-
-        newData[name] = value;
-
+        if(name === 'file'){
+            newData[name] = e.target.files[0];
+        }else{
+            newData[name] = value;
+        }
 
         setFormData(newData);
     }

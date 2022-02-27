@@ -1,10 +1,12 @@
 import { useQuery } from '@apollo/client';
 import React from 'react';
+// import { useAlert } from 'react-alert';
 import { GET_WORKS } from '../../../graphql/queries/queries';
 
 
 
 const PortfolioList = () => {
+    // const alert = useAlert();
     const { loading, data, error } = useQuery(GET_WORKS);
 
    
@@ -14,7 +16,7 @@ const PortfolioList = () => {
     }
 
     if(error){
-        alert.error(error.message)
+        console.log(error)
     };
 
     return (

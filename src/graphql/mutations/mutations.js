@@ -26,7 +26,7 @@ export const CREATE_ADMIN_MUTATION = gql`
 
 export const ADD_WORKS_MUTATION = gql`
 # Increments a back-end counter and gets its resulting value
-    mutation AddWorks($title: String, $description: String, $category: String, $file: String) {
+    mutation AddWorks($title: String, $description: String, $category: String, $file: Upload) {
         addWorks(input: {title: $title, description: $description, category: $category, file: $file}){
             _id
             title
